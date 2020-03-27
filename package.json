@@ -16,7 +16,7 @@
     "url": "https://github.com/andwin/eslint-config/issues"
   },
   "homepage": "https://github.com/andwin/eslint-config#readme",
-  "devDependencies": {
+  "dependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.1",
