@@ -1,0 +1,27 @@
+{
+  "name": "@andwin/eslint-config",
+  "version": "0.0.1",
+  "description": "eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andwin/eslint-config.git"
+  },
+  "author": "andwin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andwin/eslint-config/issues"
+  },
+  "homepage": "https://github.com/andwin/eslint-config#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0"
+  }
+}
