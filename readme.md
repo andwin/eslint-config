@@ -33,8 +33,14 @@ You can have multiple tests like this
 
 Run the tests like this `npm test`
 
-## Updating to the latest version of thsi package
+## Updating to the latest version of this package
 
 ```
 npm i @andwin/eslint-config@latest -D
+```
+
+## Update eslint dependencies in this package
+
+```
+npx install-peerdeps eslint-config-airbnb
 ```
