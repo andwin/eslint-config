@@ -1,6 +1,6 @@
 {
   "name": "@andwin/eslint-config",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "eslint config",
   "main": "index.js",
   "scripts": {
