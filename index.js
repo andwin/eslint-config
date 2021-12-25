@@ -14,11 +14,25 @@ const eslintRules = {
   rules: {
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
     'consistent-return': 'off', // Allowing guard clauses returning undefined
+    'import/prefer-default-export': 'off', // We allow named exports even if there's just one
+    'max-len': [
+      'error',
+      {
+        code: 150, // Allowing 150 chars per line
+        tabWidth: 2,
+        ignoreComments: true,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreTrailingComments: true,
+        ignoreUrls: true,
+      },
+    ],
     'no-await-in-loop': 'off', // Allowing await in loops
     'no-continue': 'off', // Allowing continue in loops
     'no-param-reassign': 'off', // Allowing reassigning of params
     'no-plusplus': 'off', // Allowing the unary operators ++ and --
-    'no-restricted-syntax': [ // We allow for-of-loops
+    'no-restricted-syntax': [ // Allowing for-of-loops
       'error',
       {
         selector: 'ForInStatement',
