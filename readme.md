@@ -8,7 +8,7 @@ Install the package as a development dependency
 npm i @andwin/eslint-config -D
 ```
 
-Create a ´.eslintrc´ file with the following content
+Create a `.eslintrc` file with the following content
 
 ```
 {
