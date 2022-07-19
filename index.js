@@ -15,6 +15,7 @@ const eslintRules = {
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
     'consistent-return': 'off', // Allowing guard clauses returning undefined
     'import/prefer-default-export': 'off', // We allow named exports even if there's just one
+    'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], aspects: ['invalidHref', 'preferButton'] }], // Need this for next/link
     'max-len': [
       'error',
       {
