@@ -55,7 +55,7 @@ const eslintRules = {
       namedComponents: 'arrow-function',
       unnamedComponents: 'arrow-function',
     }],
-    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.tsx'] }], // Allowing jsx in js files and tsx files
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }], // Allowing jsx in js-files
     'react/jsx-one-expression-per-line': 'off', // Allowing multiple expressions per line for example <span><h1></h1><p></p></span>
     'react/jsx-props-no-spreading': 'off', // Allowing props spreading
     radix: ['error', 'as-needed'],
