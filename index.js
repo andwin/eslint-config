@@ -61,6 +61,24 @@ const eslintRules = {
     radix: ['error', 'as-needed'],
     semi: ['error', 'never'], // No semicolons
   },
+  overrides: [
+    // Overrides for TypeScript files
+    {
+      files: ['*.ts', '*.tsx'],
+      extends: [
+        'airbnb-typescript',
+      ],
+      parserOptions: {
+        project: ['./tsconfig.json'],
+      },
+      rules: {
+        'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }], // We allow jsx in tsx-files
+        '@typescript-eslint/semi': ['error', 'never'],
+        '@typescript-eslint/no-use-before-define': ['error', { functions: true, variables: false }], // We like to keep the most important functions at the top of the file
+      },
+    },
+  ],
+
 }
 
 module.exports = eslintRules
