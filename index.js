@@ -72,9 +72,29 @@ const eslintRules = {
         project: ['./tsconfig.json'],
       },
       rules: {
-        'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }], // We allow jsx in tsx-files
-        '@typescript-eslint/semi': ['error', 'never'],
+        '@typescript-eslint/comma-dangle': [
+          'error', {
+            arrays: 'always-multiline',
+            objects: 'always-multiline',
+            imports: 'always-multiline',
+            exports: 'always-multiline',
+            enums: 'always-multiline',
+            functions: 'never',
+          },
+        ],
         '@typescript-eslint/no-use-before-define': ['error', { functions: true, variables: false }], // We like to keep the most important functions at the top of the file
+        '@typescript-eslint/semi': ['error', 'never'],
+        '@typescript-eslint/space-before-function-paren': ['error', {
+          anonymous: 'never',
+          named: 'never',
+          asyncArrow: 'always',
+        }],
+        'react/require-default-props': ['error', { // We use default arguments for function components instead of defaultProps
+          forbidDefaultForRequired: true,
+          classes: 'defaultProps',
+          functions: 'defaultArguments',
+        }],
+        'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }], // We allow jsx in tsx-files
       },
     },
   ],
